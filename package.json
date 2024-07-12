@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fontsource/kelly-slab": "^5.0.20",
+    "@fontsource/lato": "^5.0.21",
     "@fontsource/oswald": "^5.0.20",
     "@reduxjs/toolkit": "^2.2.6",
     "@testing-library/jest-dom": "^5.17.0",
