@@ -76,67 +76,67 @@ function Content() {
                             </div>
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
-                                    <span>$14</span>
+                                    <span>DRAGONFRUIT TINI</span>
+                                    <span>$16</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Titos, dragon fruit liqueur, Cointreau, fresh lemon juice, simple</span>
                             </div>
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
-                                    <span>$14</span>
+                                    <span>HIBISCUS RITA</span>
+                                    <span>$16</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Casamigos Blanco,orange liqueur, hibiscus liqueur, dried hibiscus fresh lime juice</span>
                             </div>
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
+                                    <span>SWEET HEAT</span>
                                     <span>$14</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Termana Reposado, muddled jalapeno, fresh lime juice, Agave</span>
                             </div>
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
+                                    <span>ATLAS</span>
                                     <span>$14</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Herradura Anejo, strawberry, lime, agave, club soda cotton candy candy fluff</span>
                             </div>
 
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
-                                    <span>$14</span>
+                                    <span>SMOKEY LOMA</span>
+                                    <span>$16</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Mezcal, fresh grapefruit juice, agave, soda</span>
                             </div>
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
+                                    <span>SMOKED PEACH OLD FASHION</span>
                                     <span>$14</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Angles Envy, creme de peach, bitters, cedarwood plank chard peaches,orange essence</span>
                             </div>
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
-                                    <span>$14</span>
+                                    <span>PURPLE RAIN</span>
+                                    <span>$17</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Empress Indigo gin, elderflower liqueur, lavender essence, fresh lemon juice, eggwhite</span>
                             </div>
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
+                                    <span>THE 6TH MAN</span>
                                     <span>$14</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>D'usse, cointreau, lemon juice, blueberry puree</span>
                             </div>
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
-                                    <span>$14</span>
+                                    <span>PEACH TEA</span>
+                                    <span>$13</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>D'usse, peach puree, house made tea</span>
                             </div>
                         </div>
                     </div>
@@ -183,24 +183,24 @@ function Content() {
                         <div className={`pb-14 mx-20 mt-5 grid md:grid-cols-1 gap-7 lg:grid-cols-2 ${isMobile ? 'mx-5' : ''}`}>
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
-                                    <span>$14</span>
+                                    <span>CINNAMON TOAST CRUNCH</span>
+                                    <span>$16</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px' }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px' }}>Skrewball peanut butter whiskey, vanilla extract, Amaretto, Baileys, egg white, cinnamon</span>
                             </div>
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
-                                    <span>$14</span>
+                                    <span>MOET SPRITZ</span>
+                                    <span>$20</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px' }}>229 Vodka ,ssdfsdf vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px' }}>Aperol, St Germain, botanical liquor, fresh lime juice, mini brut Moet topper</span>
                             </div>
                             <div className='h-fit'>
                                 <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
+                                    <span>BAR 42 MARY</span>
                                     <span>$14</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px' }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
+                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px' }}>Titos, tomato juice, worcestershire, celery salt, black pepper, tabasco, fully loaded</span>
                             </div>
 
                         </div>

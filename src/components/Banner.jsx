@@ -42,7 +42,6 @@ function Banner() {
                 </span>
                 )}
 
-
             </div>
         </div>
     );
