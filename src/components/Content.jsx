@@ -4,11 +4,48 @@ import "@fontsource/kelly-slab"; // Defaults to weight 400
 
 function Content() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
-    const [menuData, setMenuData] = useState([{
-        name: "",
-        description: "",
-        price: 0
-    }])
+    const [menuData, setMenuData] = useState([
+        {
+            name: "LYCHEETINI",
+            description: "229 Vodka ,vermouth,lychee juice,fresh lime juice",
+            price: 14
+        },
+        {
+            name: "DRAGONFRUIT TINI",
+            description: "Titos, dragon fruit liqueur, Cointreau, fresh lemon juice, simple",
+            price: 16
+        },
+        {
+            name: "HIBISCUS RITA",
+            description: "Casamigos Blanco,orange liqueur, hibiscus liqueur, dried hibiscus fresh lime juice",
+            price: 18
+        },
+        {
+            name: "SWEET HEAT",
+            description: "Termana Reposado, muddled jalapeno, fresh lime juice, Agave",
+            price:14
+        },
+        {
+            name: "DRAGONFRUIT TINI",
+            description: "Titos, dragon fruit liqueur, Cointreau, fresh lemon juice, simple",
+            price: 16
+        },
+        {
+            name: "HIBISCUS RITA",
+            description: "Casamigos Blanco,orange liqueur, hibiscus liqueur, dried hibiscus fresh lime juice",
+            price: 18
+        },
+        {
+            name: "LYCHEETINI",
+            description: "229 Vodka ,vermouth,lychee juice,fresh lime juice",
+            price: 14
+        },
+        {
+            name: "SWEET HEAT",
+            description: "Termana Reposado, muddled jalapeno, fresh lime juice, Agave",
+            price:14
+        }
+    ])
 
     useEffect(() => {
 
