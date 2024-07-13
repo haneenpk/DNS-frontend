@@ -16,7 +16,7 @@ function Content() {
         const fetchData = async () => {
             try {
                 console.log("haloo");
-                const response = await axios.get(`http://cozastore.online/loadMenu`);
+                const response = await axios.get(`https://cozastore.online/loadMenu`);
                 console.log(response.data); // Handle the response as needed
                 setMenuData(response.data)
             } catch (error) {
@@ -164,7 +164,6 @@ function Content() {
                                 </div>
                                 <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px' }}>Titos, tomato juice, worcestershire, celery salt, black pepper, tabasco, fully loaded</span>
                             </div>
-
                         </div>
                     </div>
                     <div className={`mt-12 border-2 border-white ${isMobile ? 'mx-5' : ''}`}>
