@@ -1,17 +1,41 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import "@fontsource/kelly-slab"; // Defaults to weight 400
 
 function Content() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
+    const [menuData, setMenuData] = useState([{
+        name: "",
+        description: "",
+        price: 0
+    }])
 
     useEffect(() => {
+
+        // Function to handle the async axios call
+        const fetchData = async () => {
+            try {
+                console.log("haloo");
+                const response = await axios.get(`http://cozastore.online/loadMenu`);
+                console.log(response.data); // Handle the response as needed
+                setMenuData(response.data)
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        // Call the fetchData function
+        fetchData();
+
+        // Function to handle window resize
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 800);
         };
 
+        // Add event listener for resize
         window.addEventListener('resize', handleResize);
 
-        // Cleanup listener on component unmount
+        // Cleanup the event listener on component unmount
         return () => {
             window.removeEventListener('resize', handleResize);
         };
@@ -67,77 +91,15 @@ function Content() {
                             </div>
                         )}
                         <div className={`pb-9 mx-20 mt-5 grid md:grid-cols-1 gap-7 lg:grid-cols-2 ${isMobile ? 'mx-5' : ''}`}>
-                            <div className='h-fit'>
-                                <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>LYCHEETINI</span>
-                                    <span>$14</span>
+                            {menuData.map((menu) => (
+                                <div className='h-fit' key={menu.name}>
+                                    <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
+                                        <span>{menu.name}</span>
+                                        <span>${menu.price}</span>
+                                    </div>
+                                    <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px' }}>{menu.description}</span>
                                 </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>229 Vodka ,vermouth,lychee juice,fresh lime juice</span>
-                            </div>
-                            <div className='h-fit'>
-                                <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>DRAGONFRUIT TINI</span>
-                                    <span>$16</span>
-                                </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Titos, dragon fruit liqueur, Cointreau, fresh lemon juice, simple</span>
-                            </div>
-                            <div className='h-fit'>
-                                <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>HIBISCUS RITA</span>
-                                    <span>$16</span>
-                                </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Casamigos Blanco,orange liqueur, hibiscus liqueur, dried hibiscus fresh lime juice</span>
-                            </div>
-                            <div className='h-fit'>
-                                <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>SWEET HEAT</span>
-                                    <span>$14</span>
-                                </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Termana Reposado, muddled jalapeno, fresh lime juice, Agave</span>
-                            </div>
-                            <div className='h-fit'>
-                                <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>ATLAS</span>
-                                    <span>$14</span>
-                                </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Herradura Anejo, strawberry, lime, agave, club soda cotton candy candy fluff</span>
-                            </div>
-
-                            <div className='h-fit'>
-                                <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>SMOKEY LOMA</span>
-                                    <span>$16</span>
-                                </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Mezcal, fresh grapefruit juice, agave, soda</span>
-                            </div>
-                            <div className='h-fit'>
-                                <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>SMOKED PEACH OLD FASHION</span>
-                                    <span>$14</span>
-                                </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Angles Envy, creme de peach, bitters, cedarwood plank chard peaches,orange essence</span>
-                            </div>
-                            <div className='h-fit'>
-                                <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>PURPLE RAIN</span>
-                                    <span>$17</span>
-                                </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>Empress Indigo gin, elderflower liqueur, lavender essence, fresh lemon juice, eggwhite</span>
-                            </div>
-                            <div className='h-fit'>
-                                <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>THE 6TH MAN</span>
-                                    <span>$14</span>
-                                </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>D'usse, cointreau, lemon juice, blueberry puree</span>
-                            </div>
-                            <div className='h-fit'>
-                                <div className='flex justify-between text-white' style={{ fontSize: isMobile ? '25px' : '30px' }}>
-                                    <span>PEACH TEA</span>
-                                    <span>$13</span>
-                                </div>
-                                <span className='' style={{ fontFamily: "Kelly Slab", color: "#BBBBBB", fontSize: isMobile ? '13px' : '18px'  }}>D'usse, peach puree, house made tea</span>
-                            </div>
+                            ))}
                         </div>
                     </div>
                     <div className={`mt-12 border-2 border-white ${isMobile ? 'mx-5' : ''}`}>
@@ -304,7 +266,7 @@ function Content() {
                 {isMobile ? (
                     null
                 ) : (
-                    <img src='/LapRigIcons.png' alt=""/>
+                    <img src='/LapRigIcons.png' alt="" />
                 )}
 
             </div>

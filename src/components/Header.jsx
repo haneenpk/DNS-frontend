@@ -24,10 +24,10 @@ function Header() {
                     </div>
                     <div className='w-1/2  h-12 hidden lg:flex justify-end'>
                         <ul className='flex space-x-6 text-white font-semibold mt-2'>
-                            <li>HOME</li>
-                            <li style={{color:'#128be2'}}>MENU</li>
-                            <li>MAKE A RESERVATION</li>
-                            <li>CONTACT US</li>
+                            <li className='cursor-pointer'>HOME</li>
+                            <li className='cursor-pointer' style={{color:'#128be2'}}>MENU</li>
+                            <li className='cursor-pointer'>MAKE A RESERVATION</li>
+                            <li className='cursor-pointer'>CONTACT US</li>
                         </ul>
                     </div>
                     <div className='lg:hidden relative z-50'>
